@@ -4,7 +4,10 @@ __pycache__/
 *$py.class
 *.db
 *.csv
+
+# Ignore SQLite database
 dbCompany
+*.db
 
 # C extensions
 *.so
