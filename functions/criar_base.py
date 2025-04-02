@@ -31,9 +31,9 @@ def criar_base():
                     CREATE TABLE IF NOT EXISTS transactions (
                         user_id INTEGER NOT NULL,
                         transaction_id INTEGER PRIMARY KEY,
-                        transaction_date TEXT NOT NULL,
+                        transaction_date TIMESTAMP NOT NULL,
                         transaction_state TEXT NOT NULL,
-                        transaction_amount REAL NOT NULL,
+                        transaction_amount DECIMAL(19,4) NOT NULL,
                         FOREIGN KEY (user_id) REFERENCES users (user_id)
                     )
                     '''
